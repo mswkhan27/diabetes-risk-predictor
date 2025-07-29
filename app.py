@@ -3,8 +3,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from risk_predictor import RiskScorePredictor
-import matplotlib.pyplot as plt
-from sklearn.metrics import ConfusionMatrixDisplay
 
 st.set_page_config(page_title="Diabetes Risk Predictor", layout="centered")
 
