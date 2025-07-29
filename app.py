@@ -13,8 +13,8 @@ st.write("This app uses a fine-tuned Random Forest model trained on the Pima Ind
 
 # Load model
 predictor = RiskScorePredictor()
-predictor.load_and_prepare_data("diabetes.csv", "Outcome")  # Pre-fit the scaler
-predictor.train(*predictor.load_and_prepare_data("diabetes.csv", "Outcome")[:2])
+X_train, X_test, y_train, y_test = predictor.load_and_prepare_data("diabetes.csv", "Outcome")
+predictor.train(X_train, y_train)
 
 st.subheader("📝 Input Patient Data for Prediction")
 
