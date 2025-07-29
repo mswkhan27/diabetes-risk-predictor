@@ -9,7 +9,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 st.set_page_config(page_title="Diabetes Risk Predictor", layout="centered")
 
 st.title("🩺 Diabetes Risk Score Predictor")
-st.write("This app uses a fine-tuned Random Forest model trained on the Pima Indians Diabetes dataset to predict diabetes risk.")
+st.write("This app uses a fine-tuned Random Forest model trained on the Pima Indians Diabetes dataset to predict diabetes risk with ML model with 71% accuracy..")
 
 # Load model
 predictor = RiskScorePredictor()
